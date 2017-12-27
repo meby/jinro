@@ -1,0 +1,241 @@
+body {
+    font-family: Meiryo; font-size: 14px;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    color: white;
+    user-select: none;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+#title {
+    display: none;
+    padding: 50px 100px 80px 100px;
+}
+
+#build {
+    display: none;
+    padding: 50px 100px 80px 100px;
+}
+
+#looking {
+    display: none;
+    padding: 50px 100px 80px 100px;
+}
+
+#village {
+    display: none;
+}
+
+/* build screen */
+
+.build_input {
+    text-align: right;
+    width: 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+/* looking screen */
+
+#entry_time_info {
+    padding-top: 5px;
+}
+
+#join_button {
+    display: none;
+    height: 30px;
+    margin-top: 30px;
+}
+
+/* game screen */
+
+#target_buttons {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    display: block;
+    width: 190px;
+    height: 505px;
+}
+
+.target_button {
+    display: none;
+    widt: 65px;
+    height: 33px;
+}
+
+#characters {
+    position: absolute;
+    left: 3px;
+    top: 38px;
+    display: block;
+    width: 190px;
+    height: 505px;
+    margin: 0;
+    padding: 1px;
+    z-index: 1;
+}
+
+.chara {
+    display: inline-block;
+    overflow: hidden;
+    width: 60px;
+    height: 94px;
+    background-color: #d0d0d0;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    padding: 0;
+    margin: 1px 1px;
+    color: black;
+}
+
+.cursor {
+    width: 60px;
+    height: 100%;
+    line-height: 100%;
+}
+
+#day_info {
+    position: absolute;
+    left: 200px;
+    top: 5px;
+    display: block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    background-color: #000000;
+    color: white;
+    z-index: 2;
+}
+
+#timer_info {
+    position: absolute;
+    left: 400px;
+    top: 5px;
+    display: block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    background-color: #000000;
+    color: white;
+    z-index: 3;
+}
+
+#skip_info {
+    position: absolute;
+    left: 600px;
+    top: 5px;
+    display: block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    background-color: #000000;
+    color: white;
+    z-index: 3;
+}
+
+#log {
+    position: absolute;
+    left: 195px;
+    top: 40px;
+    display: block;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    width: 600px;
+    height: 415px;
+    padding: 5px;
+    background-color: #808080;
+    color: white;
+    z-index: 2;
+}
+
+#deck {
+    position: absolute;
+    left: 195px;
+    top: 460px;
+    display: block;
+    box-sizing: border-box;
+    width: 600px;
+    height: 135px;
+    padding: 2px;
+    background-color: #706050;
+    color: white;
+    z-index: 3;
+}
+
+.deck_button {
+    display: none;
+    width: 80px;
+    height: 30px;
+    filter: opacity(0.8);
+}
+
+#skip_button {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+}
+
+#self_data {
+    display: inline-block;
+    width: 240px;
+    height: 30px;
+    padding: 0 0 0 5px;
+    line-height: 30px;
+}
+
+#chat_background {
+    position: absolute;
+    left: 2px;
+    top: 35px;
+    display: block;
+    box-sizing: border-box;
+    width: 596px;
+    height: 100px;
+    background-color: #f0f0f0;
+    filter: opacity(0.7);
+    z-index: 4;
+    padding: 5px;
+    font-family: Meiryo; font-size: 14px;
+}
+
+#self_chara {
+    position: absolute;
+    left: 1px;
+    top: 35px;
+    display: block;
+    z-index: 5;
+    padding: 5px 0px 0px 0px;
+    font-family: Meiryo; font-size: 14px;
+    filter: sepia(1) opacity(0.5);
+}
+
+#chat_input {
+    position: absolute;
+    left: 2px;
+    top: 35px;
+    display: block;
+    box-sizing: border-box;
+    width: 596px;
+    height: 100px;
+    background-color: transparent;
+    z-index: 6;
+    padding: 5px 5px 5px 80px;
+    font-family: Meiryo; font-size: 14px;
+    resize: none;
+}
+
+textarea {
+    border: 1px solid #808080;
+}
+
+textarea:focus {
+    border: 1px solid #ff8000;
+    outline: 0;
+}

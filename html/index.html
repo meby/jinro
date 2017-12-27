@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jinro</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div id="title">
+    <h2>MEBY人狼</h2>
+    <button id="to_build_button" style="height: 30px;">村作成画面へ</button>
+    <div id="playing"></div>
+    <div style="margin-top: 30px;">
+      <p>チャット型の人狼です。</p>
+      <p>ソースコードは公開してます。<br>書き換えれば、機能・役職等を追加することができます。<br>
+         https://github.com/meby/jinro</p>
+    </div>
+  </div>
+  <div id="build">
+    <h2>村作成</h2>
+    <table style="font-size: 14px;">
+      <tr style="height: 30px;">
+        <td>必要人数</td>
+        <td><input id="min_number" type="text" value="8" class="build_input"> 人</td>
+        <td width="20"></td>
+        <td>ゲームを始めるには、この人数の参加者が必要です</td>
+      </tr>
+      <tr style="height: 26px;">
+        <td>募集時間</td>
+        <td><input id="recruit_duration" type="text" value="5" class="build_input"> 秒</td>
+        <td></td>
+        <td>村作成ボタンを押してから募集を締め切るまでの時間です</td>
+      </tr>
+      <tr style="height: 10px;">
+        <td></td>
+      </tr>
+      <tr style="height: 26px;">
+        <td>朝の時間</td>
+        <td><input id="morning_duration" type="text" value="8" class="build_input"> 秒</td>
+        <td></td>
+        <td>狩りの結果</td>
+      </tr>
+      <tr style="height: 26px;">
+        <td>昼の時間</td>
+        <td><input id="day_duration" type="text" value="8" class="build_input"> 秒</td>
+        <td></td>
+        <td>村人全員の会話</td>
+      </tr>
+      <tr style="height: 26px;">
+        <td>夕の時間</td>
+        <td><input id="evening_duration" type="text" value="8" class="build_input"> 秒</td>
+        <td></td>
+        <td>吊りの結果</td>
+      </tr>
+      <tr style="height: 26px;">
+        <td>夜の時間</td>
+        <td><input id="night_duration" type="text" value="8" class="build_input"> 秒</td>
+        <td></td>
+        <td>人狼の会話</td>
+      </tr>
+      <tr style="height: 10px;">
+        <td></td>
+      </tr>
+      <tr style="height: 26px;">
+        <td>エピローグ</td>
+        <td><input id="epilogue_duration" type="text" value="8" class="build_input"> 秒</td>
+        <td></td>
+        <td>エンドロール表示</td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <button id="build_button" style="height: 30px;">村作成</button>
+    <div style="display: inline-block; width: 20px;"></div>
+    <button id="to_title_button" style="height: 30px;">タイトルへ</button>
+  </div>
+  <div id="looking">
+    <h2>村人募集中</h2>
+    <div id="join_info"></div>
+    <div id="entry_timer_info"></div>
+    <button id="join_button">参加する</button>
+  </div>
+  <div id="village">
+    <div id="target_buttons">
+      <button id="vote_button" class="target_button">投票</button>
+      <button id="hunt_button" class="target_button">狩り</button>
+      <button id="divine_button" class="target_button">占い</button>
+      <button id="guard_button" class="target_button">守り</button>
+    </div>
+    <div id="characters"></div>
+    <div id="day_info"></div>
+    <div id="timer_info"></div>
+    <div id="skip_info"></div>
+    <div id="log"></div>
+    <div id="deck">
+      <div id="self_data"></div>
+      <button id="say_button" class="deck_button">発言</button>
+      <button id="howl_button" class="deck_button">遠吠え</button>
+      <button id="groan_button" class="deck_button">うめき</button>
+      <button id="skip_button" class="deck_button">スキップ</button>
+    <div id="chat_background"></div>
+    <textarea id="chat_input"></textarea>
+    <div id="self_chara"></div>
+    </div>
+  </div>
+</body>
+</html>
